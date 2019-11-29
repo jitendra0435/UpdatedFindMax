@@ -1,37 +1,19 @@
 package com.bridgelaz;
 
 public class FindMaxNumber {
-    public static Integer checkMaxValue(Integer a, Integer b, Integer c) {
-        Integer maxNumber;
-        if(a.compareTo(b)>0 && a.compareTo(c)>0)
-            maxNumber=a;
-        else if(b.compareTo(a)>0&& b.compareTo(c)>0)
-            maxNumber=b;
+
+    public static<E extends Comparable>E checkMaxValue(E firstValue,E secoundValue, E thirdValue) {
+
+        if(firstValue.toString().compareTo(secoundValue.toString())>0 &&
+                firstValue.toString().compareTo(thirdValue.toString())>0){
+            return firstValue;
+        }
+        else if(secoundValue.toString().compareTo(firstValue.toString())>0 &&
+                secoundValue.toString().compareTo(thirdValue.toString())>0){
+            return secoundValue;
+        }
         else
-            maxNumber=c;
-        return maxNumber;
+            return  thirdValue;
     }
 
-    public Double checkMaxValueDouble(Double a,Double b, Double c) {
-        Double maxDoubleNumber=0.0;
-        if(a.compareTo(b)>0 && a.compareTo(c)>0)
-            maxDoubleNumber=a;
-        else if(b.compareTo(a)>0&& b.compareTo(c)>0)
-            maxDoubleNumber=b;
-        else
-            maxDoubleNumber=c;
-        return maxDoubleNumber;
-    }
-
-    public String checkMaxValueString(String a, String b, String c) {
-        String maxString ;
-        if(a.compareTo(b)>0 && a.compareTo(c)>0)
-            maxString=a;
-        else if(b.compareTo(a)>0&& b.compareTo(c)>0)
-            maxString=b;
-        else
-            maxString=c;
-        return maxString;
-
-    }
 }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelaz.UpdatedFindMax" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-29T06:05:09" hostname="admin1-desktop" time="0.001">
+<testsuite name="com.bridgelaz.UpdatedFindMax" tests="1" skipped="1" failures="0" errors="0" timestamp="2019-11-29T06:49:53" hostname="admin1-desktop" time="34.28">
   <properties/>
-  <testcase name="givenThreeString_ReturnMaxFrom_Thirdplace" classname="com.bridgelaz.UpdatedFindMax" time="0.001"/>
+  <testcase name="givenThreeString_ReturnMaxFrom_firstplace" classname="com.bridgelaz.UpdatedFindMax" time="34.28">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
