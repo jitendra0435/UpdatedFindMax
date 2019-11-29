@@ -16,7 +16,15 @@ public class UpdatedFindMax {
             FindMaxNumber findmax=new FindMaxNumber();
             Integer maxInteger=findmax.checkMaxValue(10,50,30);
             Assert.assertEquals(Integer.valueOf(50),maxInteger);
-    }
+        }
+        @Test
+        public void givenThreeIntegerNumber_ReturnMaximumNumber_FromThirdplace(){
+            FindMaxNumber findmax=new FindMaxNumber();
+            Integer maxInteger=findmax.checkMaxValue(10,20,30);
+            Assert.assertEquals(Integer.valueOf(30),maxInteger);
+        }
+
+
 
 }
 
