@@ -54,7 +54,15 @@ public class UpdatedFindMax {
         Assert.assertEquals("peach", maxString);
 
     }
+    @Test
+    public void givenThreeString_ReturnMaxFrom_Secoundplace() {
+        FindMaxNumber findmax = new FindMaxNumber();
+        String maxString = findmax.checkMaxValueString("apple", "peach", "banana");
+        Assert.assertEquals("peach", maxString);
+
+    }
 }
+
 
 
 
