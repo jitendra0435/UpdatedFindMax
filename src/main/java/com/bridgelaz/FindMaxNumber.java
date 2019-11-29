@@ -11,4 +11,15 @@ public class FindMaxNumber {
             maxNumber=c;
         return maxNumber;
     }
+
+    public Double checkMaxValueDouble(Double a,Double b, Double c) {
+        Double maxDoubleNumber=0.0;
+        if(a.compareTo(b)>0 && a.compareTo(c)>0)
+            maxDoubleNumber=a;
+        else if(b.compareTo(a)>0&& b.compareTo(c)>0)
+            maxDoubleNumber=b;
+        else
+            maxDoubleNumber=c;
+        return maxDoubleNumber;
+    }
 }

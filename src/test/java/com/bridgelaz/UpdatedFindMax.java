@@ -23,10 +23,14 @@ public class UpdatedFindMax {
             Integer maxInteger=findmax.checkMaxValue(10,20,30);
             Assert.assertEquals(Integer.valueOf(30),maxInteger);
         }
+        @Test
+            public void givenThreeDoublesNumbers_ReturnMaximumNumberFromFirstPlace(){
+            FindMaxNumber findmax=new FindMaxNumber();
+            Double maxDouble=findmax.checkMaxValueDouble(30.00,10.00,15.00);
+            Assert.assertEquals(Double.valueOf(30),maxDouble);
+        }
 
-
-
-}
+    }
 
 
 
