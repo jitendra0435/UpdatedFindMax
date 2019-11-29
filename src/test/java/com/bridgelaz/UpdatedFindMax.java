@@ -29,6 +29,12 @@ public class UpdatedFindMax {
             Double maxDouble=findmax.checkMaxValueDouble(30.00,10.00,15.00);
             Assert.assertEquals(Double.valueOf(30),maxDouble);
         }
+        @Test
+        public void givenThreeDoublesNumbers_ReturnMaximumNumberFromSecoundPlace(){
+            FindMaxNumber findmax=new FindMaxNumber();
+            Double maxDouble=findmax.checkMaxValueDouble(10.00,30.00,15.00);
+            Assert.assertEquals(Double.valueOf(30),maxDouble);
+        }
 
     }
 
