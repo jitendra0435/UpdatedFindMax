@@ -6,65 +6,56 @@ public class UpdatedFindMax {
 
     @Test
     public void givenThreeIntegerNumber_ReturnMaximumNumber_FromFirstPlace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        Integer maxInteger = findmax.checkMaxValue(80, 10, 30);
-        Assert.assertEquals(Integer.valueOf(80), maxInteger);
+        FindMaxNumber findMaxNumber=new FindMaxNumber(80,20,10);
+        Assert.assertEquals(Integer.valueOf(80),findMaxNumber.checkMaxValue());
     }
 
     @Test
     public void givenThreeIntegerNumber_ReturnMaximumNumber_FromSecoundplace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        Integer maxInteger = findmax.checkMaxValue(10, 50, 30);
-        Assert.assertEquals(Integer.valueOf(50), maxInteger);
+         FindMaxNumber findMaxNumber=new FindMaxNumber(10,50,30);
+        Assert.assertEquals(Integer.valueOf(50), findMaxNumber.checkMaxValue());
     }
 
     @Test
     public void givenThreeIntegerNumber_ReturnMaximumNumber_FromThirdplace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        Integer maxInteger = findmax.checkMaxValue(10, 20, 30);
-        Assert.assertEquals(Integer.valueOf(30), maxInteger);
+        FindMaxNumber findMaxNumber=new FindMaxNumber(10,20,30);
+        Assert.assertEquals(Integer.valueOf(30), findMaxNumber.checkMaxValue());
     }
 
     @Test
     public void givenThreeDoublesNumbers_ReturnMaximumNumberFromFirstPlace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        Double maxDouble = findmax.checkMaxValue(30.00, 10.00, 15.00);
-        Assert.assertEquals(Double.valueOf(30), maxDouble);
+        FindMaxNumber findMaxNumber=new FindMaxNumber(30.00, 10.00, 15.00);
+        Assert.assertEquals(Double.valueOf(30), findMaxNumber.checkMaxValue());
     }
 
     @Test
     public void givenThreeDoublesNumbers_ReturnMaximumNumberFromSecoundPlace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        Double maxDouble = findmax.checkMaxValue(10.00, 30.00, 15.00);
-        Assert.assertEquals(Double.valueOf(30.00), maxDouble);
+        FindMaxNumber findMaxNumber= new FindMaxNumber(10.00, 30.00, 15.00);
+        Assert.assertEquals(Double.valueOf(30.00), findMaxNumber.checkMaxValue());
     }
 
     @Test
     public void givenThreeDoublesNumbers_ReturnMaximumNumberFromThirdPlace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        Double maxDouble = findmax.checkMaxValue(10.00, 30.00, 50.00);
-        Assert.assertEquals(Double.valueOf(50.00), maxDouble);
+        FindMaxNumber  findMaxNumber=new FindMaxNumber(10.00, 30.00, 50.00);
+        Assert.assertEquals(Double.valueOf(50.00), findMaxNumber.checkMaxValue());
     }
 
     @Test
     public void givenThreeString_ReturnMaxFrom_firstplace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        String maxString = findmax.checkMaxValue("peach", "apple", "banana");
-        Assert.assertEquals("peach", maxString);
+        FindMaxNumber findMaxNumber=new FindMaxNumber("peach", "apple", "banana");
+        Assert.assertEquals("peach",findMaxNumber.checkMaxValue());
 
     }
     @Test
     public void givenThreeString_ReturnMaxFrom_Secoundplace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        String maxString = findmax.checkMaxValue("apple", "peach", "banana");
-        Assert.assertEquals("peach", maxString);
+        FindMaxNumber findMaxNumber= new FindMaxNumber("apple", "peach", "banana");
+        Assert.assertEquals("peach",findMaxNumber.checkMaxValue());
 
     }
     @Test
     public void givenThreeString_ReturnMaxFrom_Thirdplace() {
-        FindMaxNumber findmax = new FindMaxNumber();
-        String maxString = findmax.checkMaxValue("banana", "apple", "peach");
-        Assert.assertEquals("peach", maxString);
+        FindMaxNumber findMaxNumber= new FindMaxNumber("banana", "apple", "peach");
+        Assert.assertEquals("peach",findMaxNumber.checkMaxValue());
     }
 }
 

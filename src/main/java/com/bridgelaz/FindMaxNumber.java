@@ -1,19 +1,30 @@
 package com.bridgelaz;
 
-public class FindMaxNumber {
+public class FindMaxNumber <E extends Comparable>{
+    E firstValue;
+    E secoundValue;
+    E thirdValue;
 
-    public static<E extends Comparable>E checkMaxValue(E firstValue,E secoundValue, E thirdValue) {
-
-        if(firstValue.toString().compareTo(secoundValue.toString())>0 &&
-                firstValue.toString().compareTo(thirdValue.toString())>0){
-            return firstValue;
-        }
-        else if(secoundValue.toString().compareTo(firstValue.toString())>0 &&
-                secoundValue.toString().compareTo(thirdValue.toString())>0){
-            return secoundValue;
-        }
-        else
-            return  thirdValue;
+    public FindMaxNumber(E a, E b, E c) {
+        this.firstValue = a;
+        this.secoundValue = b;
+        this.thirdValue = c;
     }
 
+    E checkMaxValue(){
+        return getCheckMaxVal(firstValue,secoundValue,thirdValue);
+    }
+    public E getCheckMaxVal(E a, E b, E c) {
+
+        if(a.toString().compareTo(b.toString())>0 &&
+                a.toString().compareTo(c.toString())>0){
+            return a;
+        }
+        else if(b.toString().compareTo(a.toString())>0 &&
+                b.toString().compareTo(c.toString())>0){
+            return b;
+        }
+        else
+            return  c;
+    }
 }
