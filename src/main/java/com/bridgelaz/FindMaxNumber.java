@@ -22,4 +22,16 @@ public class FindMaxNumber {
             maxDoubleNumber=c;
         return maxDoubleNumber;
     }
+
+    public String checkMaxValueString(String a, String b, String c) {
+        String maxString ;
+        if(a.compareTo(b)>0 && a.compareTo(c)>0)
+            maxString=a;
+        else if(b.compareTo(a)>0&& b.compareTo(c)>0)
+            maxString=b;
+        else
+            maxString=c;
+        return maxString;
+
+    }
 }
